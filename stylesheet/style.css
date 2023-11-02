@@ -81,6 +81,39 @@ SIDEBAR
     color: #A3A3A3;
 }
 
+#login {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+
+}
+
+.login-element {
+    width: 100%;
+}
+
+#login span{
+    color: #A3A3A3;
+}
+
+#login hr{
+    color: #A3A3A3;
+    margin: 0 auto;
+    width: 70%;
+}
+
+#login h2{
+    font-size: 16px;
+    color: white;
+}
+
+#login i{
+    background-color: #A3A3A3;
+    border-radius: 100%;
+}
+
 
 /***********
 RECORDER STYLES

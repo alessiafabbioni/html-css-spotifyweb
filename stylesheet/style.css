@@ -59,12 +59,12 @@ PLAYER
 
 #music {
     display: flex;
-    margin: 100px;
     color: #A3A3A3;
-    width: calc(100% - 250px);
+    width: 100%;
     flex-direction: column;
     overflow: scroll;
     height: calc(100vh - 100px);
+    padding: 100px 50px;
 }
 
 .title {
@@ -92,7 +92,7 @@ PLAYER
     width: calc(100% / 6);
     text-align: center;
     padding: 0 5px;
-}
+} 
 
 
 .music-block img {
@@ -128,8 +128,25 @@ PLAYER
 }
 
 .recorder-block-element{
-    padding: 15px;
+    padding: 10px;
     color: white;
+}
+
+.recorder-block-element2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0 10px;
+    color: white;
+}
+
+.recorder-block-element2 i {
+    padding: 10px;
+}
+
+.recorder-block-element i {
+    padding: 0 10px;
+    font-size: 12px;
 }
 
 .recorder-block-ver{
@@ -257,4 +274,61 @@ RECORDER STYLES
     width: 100%;
     background-color: #282828;
     position: absolute;
+}
+
+.volume-progress-container {
+    display: flex;
+    align-items: center;
+}
+
+.volume-progress-container i {
+    margin-right: 10px;
+}
+
+
+
+
+
+/***********
+MEDIA QUERY
+***********/
+
+@media screen and (max-width: 1200px) {
+    .music-block {
+        flex: 0 0 20%;
+        min-width: 120px; 
+        max-width: 160px;
+    }
+
+    .title {
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .music-block {
+        flex: 0 0 33.33%; 
+        min-width: 130px; 
+        max-width: 150px;
+    }
+   
+    .title {
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .music-block {
+        flex: 0 0 100%; 
+        min-width: 250px; 
+        max-width: none;
+    }
+
+    .title {
+        flex-wrap: wrap;
+        padding: 10px;
+    }
 }

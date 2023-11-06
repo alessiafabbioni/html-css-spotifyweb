@@ -74,8 +74,26 @@ PLAYER
     justify-content: space-evenly;
     font-weight: 600;
     padding: 20px;
+}
 
+.title span {
+    position: relative;
+    color: #A3A3A3;
+    transition: color 0.3s, border-bottom 0.3s;
+}
 
+.title span:hover {
+    color: white;
+}
+
+.title span:hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 15%; 
+    width: 70%; 
+    height: 3px;
+    background-color: #4CAF50; 
 }
 
 #music-box {

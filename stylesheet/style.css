@@ -13,7 +13,8 @@ GENERAL STYLES
     font-family: 'Montserrat', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-family: 'PT Sans', sans-serif;
-    font-size: 12px
+    font-size: 12px;
+
 }
 
 /***********
@@ -31,7 +32,79 @@ WRAPPER STYLES
 PLAYER
 ***********/
 
+#upgrade {
+    width: calc(100% - 250px);
+    background-color: black;
+    opacity: 30%;
+    height: 100px;
+    display: flex;
+    position: absolute;
+    justify-content: flex-end;
+    align-items: center;
+}
 
+.button {
+    padding: 10px 30px;
+    border: white 2px solid;
+    border-radius: 20px;
+    position: absolute;
+    color: white;
+    margin: 20px;
+    font-weight: 600;
+}
+
+
+
+
+
+#recorder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recorder-block {
+    padding: 20px;
+}
+
+.recorder-block-hor{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.recorder-block-hor img{
+    max-width: 60px;
+}
+
+.recorder-block-element{
+    padding: 15px;
+    color: white;
+}
+
+.recorder-block-ver{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.progress-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+  }
+
+.progress-bar {
+    height: 3px;
+    background-color: #4CAF50;
+    width: 0;
+    text-align: center;
+    line-height: 30px;
+    color: #A3A3A3;
+}
 
 
 /***********

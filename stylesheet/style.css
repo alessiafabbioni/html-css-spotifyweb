@@ -55,6 +55,15 @@ PLAYER
     color: white;
     margin: 20px;
     font-weight: 600;
+    transition: color 0.3;
+}
+
+.button:hover {
+    border-color: #4CAF50;
+}
+
+.button:hover span{
+    color: #4CAF50;
 }
 
 #music {
@@ -220,6 +229,9 @@ SIDEBAR
     padding: 10px 0;
 }
 
+#sidebar li:hover {
+    color: white; 
+}
 
 
 #playlist {
@@ -339,6 +351,7 @@ MEDIA QUERY
 
 
 @media screen and (max-width: 400px) {
+   
     .music-block {
         flex: 0 0 100%; 
         min-width: 250px; 
@@ -367,9 +380,7 @@ MEDIA QUERY
 
     #wrapper {
         flex-direction: column; 
-    }
 
-    #player {
-        width: 100%; 
+    }
 
 }
